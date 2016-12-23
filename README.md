@@ -89,4 +89,5 @@ Test accuracy: 0.9832
 ## 參考
 - [一天搞懂深度學習 心得筆記](https://github.com/hugolu/learning-notes/blob/master/deep-learning.md)
 - [keras 官網](https://keras.io/)
+- [Keras 中文文档](https://keras-cn.readthedocs.io/en/latest/)
 - [ermaker/keras dockerfile](https://hub.docker.com/r/ermaker/keras/)
