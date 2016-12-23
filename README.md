@@ -7,6 +7,7 @@
 ## 環境
 ```shell
 $ docker pull ermaker/keras
+$ docker run --rm -it -v $(pwd)/share:/share ermaker/keras bash
 ```
 
 ## 參考
