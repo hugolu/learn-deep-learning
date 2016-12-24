@@ -73,6 +73,8 @@ model.add(Activation('softmax'))            # 對輸出層施加激活函數 Sof
 - [`Activation`](https://keras.io/layers/core/#activation): Applies an activation function to an output.
 - [`Dropout`](https://keras.io/layers/core/#dropout): Applies Dropout to the input. Dropout consists in randomly setting a fraction p of input units to 0 at each update during training time, which helps prevent overfitting.
 
+![](pictures/defining-DNN.png)
+
 ### 編譯模型
 ```python
 model.compile(loss='categorical_crossentropy',        # 設定損失函數，評估準確度
