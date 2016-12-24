@@ -14,5 +14,10 @@ from keras.datasets import mnist
 ```
 
 回傳兩個 tuple：
-- `X_train, X_test`: uint8 array of grayscale image data with shape (nb_samples, 28, 28).
-- `y_train, y_test`: uint8 array of digit labels (integers in range 0-9) with shape (nb_samples,).
+- `X_train, X_test`: uint8 array of grayscale image data with shape `(nb_samples, 28, 28)`.
+- `y_train, y_test`: uint8 array of digit labels (integers in range 0-9) with shape `(nb_samples,)`.
+
+例如： X_train[1] 長下面這樣(每個0~255的數字對應一個灰階的pixel)，經過人工判讀 y_train[1] 為 0
+![](pictures/X_train[1].png)
+
+
