@@ -21,7 +21,7 @@ from keras.datasets import mnist
 ![](pictures/X_train[1].png)
 
 ## 使用 DNN 辨識 MNIST 資料集
-source: https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py
+完整程式碼: https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py
 
 ### 準備訓練/測試資料集
 ```python
