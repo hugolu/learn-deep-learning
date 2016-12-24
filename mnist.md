@@ -1,4 +1,4 @@
-# 訓練簡單的 DNN (deep neuron networks) 辨識 MNIST 資料集
+# 辨識 MNIST 資料集
 
 - script: https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py
 - dataset: https://s3.amazonaws.com/img-datasets/mnist.pkl.gz
