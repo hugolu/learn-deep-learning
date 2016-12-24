@@ -1,5 +1,10 @@
 # 辨識 MNIST 資料集
 
+## 模型訓練步驟
+- 步驟一：定義一組函數
+- 步驟二：定義"好"的標準
+- 步驟三：挑個最好結果
+
 ## MNIST 資料集
 
 資料集：https://s3.amazonaws.com/img-datasets/mnist.pkl.gz
@@ -56,7 +61,7 @@ array([ 1.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])
 
 > 如果圖片內容不是數值 0~9，而是 apple, banana, cherry...，輸出結果無法用數值表示，必須通過 1-of-k coding 將類別特徵表示為數字形式。
 
-### 定義模型
+### 定義模型 (步驟一：定義一組函數)
 
 ```python
 model = Sequential()                        # 使用 Sequential model：多層網路的線性堆疊
@@ -79,7 +84,7 @@ model.add(Activation('softmax'))            # 對輸出層施加激活函數 Sof
 
 ![](pictures/defining-DNN.png)
 
-### 編譯模型
+### 編譯模型 (步驟二：定義好的標準)
 
 ```python
 model.compile(loss='categorical_crossentropy',        # 設定損失函數，評估準確度
@@ -90,7 +95,7 @@ model.compile(loss='categorical_crossentropy',        # 設定損失函數，評
 - `optimizer` is the string identifier of an existing optimizer (such as rmsprop or adagrad), or an instance of the  Optimizer class.
 - `metrics`: For any classification problem you will want to set this to metrics=['accuracy'].
 
-### 訓練模型
+### 訓練模型 (步驟三：挑個最好結果)
 
 ```python
 history = model.fit(X_train,                          # 輸入資料
